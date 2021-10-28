@@ -2,15 +2,11 @@
 const indirizzi_email = ['luca@gmail.com', 'marco@gmail.com', 'pia@gmail.com'];
 
 //chiedi all'utente la sua email
-const email_inserita = prompt('Inserisci la tua email');
+const email_inserita = prompt('Inserisci la tua email').trim().toLowerCase();
 console.log(`L'email inserita dall' utente è ${email_inserita}`);
 
 // controlla che sia nella lista di chi può accedere 
 
-// controllo campo vuoto 
-if(email_inserita === '') {
-    alert('Prego, inserire una email'); 
-} else {
     // controllo presenza email nell array indirizzi email
     let emailFound = false;
 
@@ -21,7 +17,7 @@ if(email_inserita === '') {
             break;
         }
     }
-}
+
 
 
 //Output
